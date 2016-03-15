@@ -120,7 +120,8 @@ nav ul li a:hover {
   color: #fff;
 }
 .container {
-  height: 1300px;
+  margin-top: 20%;
+  height: 600px;
   z-index: 1;
   padding: 0px 20px;
 }
@@ -128,6 +129,18 @@ nav ul li a:hover {
   max-width: 600px;
   margin: 0 auto;
   padding-top: 40px;
+}
+
+.container div p {
+  text-align: left;
+  color: white;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  opacity: .7;
+  margin-bottom: 0.7em;
+  font-family: Arial;
+  text-transform: uppercase;
 }
 
 
@@ -173,7 +186,7 @@ figure.show{
   z-index: 1;
   font-size: 2em;
   margin-top: -.75em;
-  opacity: .3;
+  opacity: .6;
   user-select: none;
 }
 .next:hover, .prev:hover{
