@@ -1,32 +1,46 @@
-(function(){
-  
-var counter = 0, // to keep track of current slide
-    $items = document.querySelectorAll('.diy-slideshow figure'), // a collection of all of the slides, caching for performance
-    numItems = $items.length; // total number of slides
+$(document).ready(function() {
 
-// this function is what cycles the slides, showing the next or previous slide and hiding all the others
-var showCurrent = function(){
-  var itemToShow = Math.abs(counter%numItems);// uses remainder (aka modulo) operator to get the actual index of the element to show  
-  
-  // remove .show from whichever element currently has it 
-  // http://stackoverflow.com/a/16053538/2006057
-  [].forEach.call( $items, function(el){
-    el.classList.remove('show');
-  });
-  
-  // add .show to the one item that's supposed to have it
-  $items[itemToShow].classList.add('show');    
-};
 
-// add click events to prev & next buttons 
-document.querySelector('.next').addEventListener('click', function() {
-     counter++;
-     showCurrent();
-  }, false);
+$('.name span').each(function() {
+		$(this).css('top', 
+								
+(Math.floor(Math.random() * 60) + 20) + '%');
+	});
 
-document.querySelector('.prev').addEventListener('click', function() {
-     counter--;
-     showCurrent();
-  }, false);
-  
-})();  
+var num = 1;
+
+setInterval(function() {
+	if(num == 4) {
+		num = 1;
+	}
+	$('body').attr('class', 'img' + num);
+	num++;
+	$('.name span').each(function() {
+		$(this).css('top', 
+(Math.floor(Math.random() * 75) + 10) + '%');
+	});
+}, 6000);
+
+});
+
+$(function(){
+	$(window).resize(function(){
+	placeFooter();
+	});
+	placeFooter();
+	// hide it before it's positioned
+	$('#footer').css('display','inline');
+	});
+
+	function placeFooter() {    
+	var windHeight = $(window).height();
+	var footerHeight = $('#footer').height();
+	var offset = parseInt(windHeight) - parseInt(footerHeight);
+	$('#footer').css('top',offset);
+}
+
+ $( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  } );
