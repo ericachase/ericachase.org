@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	font-family: Open Sans, sans-serif;
+}
+
+#my-info {
+	color: white;
+	background-color: #282828;
+}
+#top-intro {
+	background-image: url("background.jpg");
+	color: white;
+}
+
+#title-bar-color {
+	background-color: #282828;
+}
+
+.link-contact {
+	color: #5f647c;
+}
+
+.link-contact:hover {
+	color: #13ab6a;
+}
+
+#submit-button {
+	background-color: #5f647c;
+}
+
+#submit-button:hover {
+	background-color: #13ab6a;
+}
+
+.spacing {
+	margin-bottom: 1.5em;
+}
+
+.portfolio-img {
+	border: solid 15px #282828;
+}
