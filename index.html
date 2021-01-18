@@ -1,19 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ericadianechase</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&family=Roboto&display=swap" rel="stylesheet">
+	<title>Erica Chase Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </head>
 <body>
-  <h1 class="hidden">erica diane chase</h1>
-  <img id="header" src="images/logo.png" alt="">
-  <ul class="mainnav">
-    <li><a href="about.html">about</a></li>
-    <li><a href="graphicdesign.html">graphic design</a></li>
-    <li><a href="productdesign.html">product design</a></li>
-    <li><a href="accessibility.html">accessibility</a></li>
-  </ul>
 
+<div class="background">
+<nav>
+	<div class="content">
+	<ul id="nav-ul">
+		<li><a href="#">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#portfolio">Portfolio</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+	</div>
+</nav>	
+</div>
+
+<div role="main">
+
+<div id="about" class="section2">
+	<div class="content" style="border-bottom: 1px solid #271f29;">
+	<h2>About</h2>
+	<div class="sidebar">
+	<img src="me.jpg" id="selfie">
+	<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="ericadianechase"><a class="LI-simple-link" href='https://www.linkedin.com/in/ericadianechase?trk=profile-badge'>Erica Chase, CPACC</a></div>
+	</div>
+	<div class="abouttext">
+	<p>
+	Hi there! My name is Erica Chase and I am a 26-year-old digital accessibility consultant and graphic designer from Chicago, Illinois. I have a Bachelor of Science in Applied Mathematics from Northern Illinois University with minors in Computer Science and Visual Communication.
+	<br><br>
+	I have had a variety of roles in the digital space, including software development, interaction design, UIUX design, user research, and accessibility consulting. In addition, I am also a Certified Professional in Accessibility Core Competencies (CPACC) with the International Association of Accessibility Professionals (IAAP), as well as a DHS Trusted Tester with the Department of Homeland Security.
+	<br><br>
+	As the IT Accessibility Consultant at Tech for All, I focus on web accessibility testing using code analysis and assistive technologies, primarily voice control software. I also work with a team to lead training sessions on accessible document creation in Microsoft Office applications and PDF, as well as web navigation and testing. Additionally, I assist with project management, including meeting with potential clients, creating project estimates and SOWs, and determining resource allocation.
+	<br><br>
+	I live in Wicker Park, Chicago with my 9-month-old black tabby cat, Peach. In my free time, I enjoy knitting, video games, cooking, and reading as much as possible. I also play the violin with the Chicago City Wide Symphony Orchestra. 
+	</p>
+	</div>
+	</div>
+</div>
+<div id="portfolio" class="section2">
+	<div class="content">
+		<h2>Portfolio</h2>
+		<p>Below is some of my graphic design work, primarily focusing on merchandise and advertising for local Chicago artists, podcasts, and events. </p>
+		<div class="placeholder"><img class="art" src="belmont.png"></div>
+		<div class="placeholder"><img class="art" src="fob.jpg"></div>
+		<div class="placeholder"><img class="art" src="citymouthseptember.png"></div>
+		<div class="placeholder"><img class="art" src="tla.jpg"></div>
+		<div class="placeholder"><img class="art" src="highteajanuary.png"></div>
+		<div class="placeholder"><img class="art" src="jjs.png"></div>
+		<div class="placeholder"><img class="art" src="nina.png"></div>
+		<div class="placeholder"><img class="art" src="noramarks.png"></div>
+		<div class="placeholder"><img class="art" src="sonny.png"></div>
+	</div>
+	<br>
+
+</div>
+<div id="contact" class="section1">
+	<div class="content">
+		<h2>Contact</h2>
+		<p>
+		To get in touch with me regarding graphic design or  digital accessibility, please use the form below.
+		</p>
+		<p><em>All fields are required.</em></p>	
+		<form action="mailto:ericadianechase@gmail.com" method="GET">
+		<label for=FirstName>First Name:&nbsp;</label>
+		<br>
+		<input type="text" name="First Name" id="FirstName" autocomplete="on">
+		<br><br>
+		<label for=LastName>Last Name:&nbsp;</label>
+		<br>
+		<input type="text" name="Last Name" id="LastName" autocomplete="on">
+		<br><br>
+		<label for=Message>Message:</label>
+		<br>
+		<textarea type="text" name="Message" id="Message"></textarea>
+		<br><br>
+		<button type="Submit" id="submit">Submit</button>
+		</form>
+	</div>
+</div>
+</div>
+<footer>&#169; Erica Chase 2021</footer>
 </body>
 </html>

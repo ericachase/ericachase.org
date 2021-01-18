@@ -1,71 +1,183 @@
-/*
-font-family: 'Playfair Display', serif;
-font-family: 'Roboto', sans-serif;
-*/
-
-@media only screen and (min-width: 640px) {
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 
 body {
-	background-image: url("images/background.jpeg");
 	margin: 0;
+	padding: 0;
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	background-color: #f3edf7;
 }
 
-#header {
-	width: 60%;
-	margin-left: 20%;
-	margin-top: 280px;
+nav {
+	padding-top: 10px;
+	margin: auto;
+	width: calc(100% - 40px);
+	max-width: 900px;
 }
 
-.mainnav {
-	list-style-type: none;
-	display: block;
+.background {
+	background-image: url("plant.jpg");
+}
+
+footer {
+	background-color: #354a43;
+	padding: 10px;
+	color: #f3edf7;
 	text-align: center;
-	padding-left: 0px;
-}
-
-.mainnav li {
-	display: inline-block;
-	padding-left: 1%;
-	padding-right: 1%;
-}
-
-.mainnav li a {
-	font-family: 'Playfair Display', serif;
-	font-size: .9em;
-	text-decoration: none;
-	color: white;
-	opacity: 1;
-	transition: 0.3s;
-}
-
-.mainnav li a:hover, .mainnav li a:focus {
-	opacity: .4;
-}
-
-.hidden {
-	opacity: 0;
-}
-
-#notmain #header {
-	margin-top: -10px;
-}
-
-.container {
-	margin-top: 100px;
-	color: white;
-	padding-left: 10%;
+	font-size: 10px;
 }
 
 h2 {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Lora', serif;
+	text-transform: lowercase;
+	font-weight: 400 !important;
+	text-align: center;
+}
+
+#nav-ul {
+	margin: 0;
+	text-align: center;
+}
+
+#nav-ul li {
+	display: inline-block;
+	margin: 20px;
+}
+
+#nav-ul li a {
+	text-decoration: none;
+	color: #f3edf7;
 	font-weight: 100;
-	font-style: italic;
-	letter-spacing: 1px;
+	text-transform: lowercase;
+	transition: 0.6s;
 }
 
-.description {
-	font-family: 'Roboto', sans-serif;
+#nav-ul li a:hover {
+	color: #6a566e;
 }
 
+.section1 {
+	background-color: #6a566e;
+	padding: 20px;
+	color: #f3edf7;
+	background-image: url("plant.jpg");
+}
 
+.section2 {
+	background-color: #f3edf7;
+	color: #271f29;
+	margin: 20px;
+}
+
+.content {
+	max-width: 900px;
+	margin: auto;
+	padding-bottom: 20px
+}
+
+#selfie {
+	display: inline-block;
+	width: 280px;
+	vertical-align: top;
+	margin-bottom: 10px;
+}
+
+.sidebar {
+	width: 280px;
+	display: inline-block;
+}
+
+#about .abouttext {
+	display: inline-block;
+	width: calc(100% - 320px);
+	padding-left: 20px;
+	margin-top: -15px;
+	position: relative;
+	vertical-align: top;
+}
+
+@media only screen and (max-width: 640px) {
+.sidebar {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+#about .abouttext {
+	display: block;
+	width: 100%;
+	padding: none;
+	position: relative;
+	vertical-align: top;
+	margin-left: -20px;
+	margin-top: 10px;
+}
+
+}
+
+.placeholder {
+	width: 30%;
+	height: auto;
+	margin: 10px;
+	/*border: 20px solid white;*/
+	display: inline-block;
+	border-radius: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+  .placeholder {
+    width: 45%;
+    height: auto;
+  }
+}
+
+.art {
+	width: 100%;
+	border-radius: 10px;
+}
+
+#FirstName, #LastName {
+	width: calc(100% - 24px);
+	height: 30px;
+	font-family: 'Libre Franklin', sans-serif;
+	border-radius: 20px;
+	padding-left: 20px;
+	border: none;
+	margin-top: 8px;
+	background-color: #f3edf7;
+}
+
+#Message {
+	width: calc(100% - 24px);
+	height: 200px;
+	font-family: 'Libre Franklin', sans-serif;
+	border-radius: 20px;
+	padding-left: 20px;
+	padding-top: 20px;
+	border: none;
+	margin-top: 8px;
+	background-color: #f3edf7;
+}
+
+#submit {
+	width: 250px;
+	height: 40px;
+	text-align: center;
+	margin-left: calc(50% - 125px);
+	font-family: 'Libre Franklin', sans-serif;
+	text-transform: lowercase;
+	background-color: #cab8cf;
+	color: #271f29;
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+	border-radius: 20px;
+	transition: 0.6s;
+
+}
+
+#submit:hover {
+	background-color: #a492a8;
 }
